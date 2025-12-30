@@ -28,9 +28,7 @@ export default function Home() {
   return (
     <div>
       <h2 className="pageTitle">Your Habits</h2>
-      <p className="softText">
-        Consistency beats intensity. Just show up.
-      </p>
+      <p className="softText">Consistency beats intensity. Just show up.</p>
 
 
       {habits.length === 0 ? (
