@@ -30,3 +30,8 @@ export function applyCheckIn(habit, mood = "🙂", note = "") {
     checkIns: [...previous, newEntry],
   };
 }
+
+export function getMilestone(streak) {
+  const milestones = [3, 7, 14, 30];
+  return milestones.includes(streak) ? streak : null;
+}

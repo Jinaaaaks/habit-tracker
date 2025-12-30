@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { getTodayISO } from "../utils/dates.js";
+import { getMilestone } from "../utils/streaks.js";
+
 
 const MOODS = ["🙂", "😮‍💨", "😤", "😌", "🔥", "🫠"];
 
 export default function HabitCard({ habit, onDelete, onCheckIn }) {
   const today = getTodayISO();
   const checkedToday = habit.lastCheckIn === today;
+  const milestone = checkedToday ? getMilestone(habit.streak) : null;
 
   const [showReflect, setShowReflect] = useState(false);
   const [mood, setMood] = useState("🙂");
@@ -48,6 +51,15 @@ export default function HabitCard({ habit, onDelete, onCheckIn }) {
               </span>
             </div>
           ) : null}
+          {milestone ? (
+            <div className="milestoneCard">
+                <span className="milestoneEmoji">✨</span>
+                <span>
+                {milestone}-day streak. That is real discipline.
+                </span>
+            </div>
+          ) : null}
+
         </div>
 
         <div className="actions">

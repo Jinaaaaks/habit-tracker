@@ -250,3 +250,24 @@ body {
   border-color: rgba(122, 215, 194, 0.35);
   font-weight: 700;
 }
+
+.milestoneCard {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 143, 177, 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 143, 177, 0.18),
+    rgba(124, 92, 255, 0.14)
+  );
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.milestoneEmoji {
+  font-size: 18px;
+}
