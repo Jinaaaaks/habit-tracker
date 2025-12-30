@@ -20,14 +20,18 @@ export default function Home() {
     updateHabits(next);
   }
 
-  function handleCheckIn(id) {
-    const next = habits.map((h) => (h.id === id ? applyCheckIn(h) : h));
+  function handleCheckIn(id, mood, note) {
+    const next = habits.map((h) => (h.id === id ? applyCheckIn(h, mood, note) : h));
     updateHabits(next);
   }
 
   return (
     <div>
       <h2 className="pageTitle">Your Habits</h2>
+      <p className="softText">
+        Consistency beats intensity. Just show up.
+      </p>
+
 
       {habits.length === 0 ? (
         <div className="card">No habits yet. Add one.</div>
