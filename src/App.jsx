@@ -6,7 +6,7 @@ import Stats from "./pages/Stats.jsx";
 
 export default function App() {
   return (
-    <div style={{ maxWidth: 900, margin: "0 auto", padding: 16 }}>
+    <div className="container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
