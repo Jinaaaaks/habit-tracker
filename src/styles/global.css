@@ -41,3 +41,14 @@ body {
   background: var(--primary);
   color: var(--primaryText);
 }
+
+.pageTitle {
+  margin: 8px 0 12px;
+}
+
+.card {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+}

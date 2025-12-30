@@ -1,3 +1,20 @@
+import { useEffect, useState } from "react";
+import { getHabits } from "../utils/storage.js";
+
 export default function Home() {
-  return <h2>Home</h2>;
+  const [habits, setHabits] = useState([]);
+
+  useEffect(() => {
+    setHabits(getHabits());
+  }, []);
+
+  return (
+    <div>
+      <h2 className="pageTitle">Home</h2>
+
+      <div className="card">
+        <div>Total habits: <b>{habits.length}</b></div>
+      </div>
+    </div>
+  );
 }
