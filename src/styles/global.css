@@ -78,3 +78,19 @@ body {
   background: var(--primary);
   color: var(--primaryText);
 }
+
+.habitRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habitName {
+  font-weight: 800;
+}
+
+.habitMeta {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
