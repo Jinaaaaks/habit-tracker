@@ -48,7 +48,7 @@ function StatCard({ label, value }) {
   return (
     <div className="card">
       <div className="habitMeta">{label}</div>
-      <div style={{ fontSize: 22, fontWeight: 900, marginTop: 6 }}>
+      <div className="statValue">
         {value}
       </div>
     </div>

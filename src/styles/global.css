@@ -105,3 +105,9 @@ body {
   color: #222;
   cursor: not-allowed;
 }
+
+.statValue {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 6px;
+}
